@@ -24,7 +24,7 @@ const Header = () => {
        {/* Logo */}
 <Link to="/" className="flex items-center space-x-3">
   <img 
-    src="/src/assets/Biotisho logo.jpg" 
+    src="/Biotisho-logo.jpg" 
     alt="Biotisho Kilimanjaro Logo"
     className="h-12 w-auto"      
   />
