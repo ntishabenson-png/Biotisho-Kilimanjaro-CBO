@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import { supabase } from "../lib/supabase";
+import { supabase } from "../lib/supabase"; // Assuming this is correctly configured
+
+// Backend URL from environment variable
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
 
 const DonationStatus: React.FC = () => {
   const [searchParams] = useSearchParams();
@@ -15,36 +18,28 @@ const DonationStatus: React.FC = () => {
       }
 
       try {
-        // Verify with Flutterwave API
-        const response = await fetch(`https://api.flutterwave.com/v3/transactions/verify_by_reference?tx_ref=${txRef}`, {
+        // Call your backend's verification endpoint
+        const response = await fetch(`${BACKEND_URL}/api/verify-payment`, {
+          method: "POST", // Use POST as per server.js
           headers: {
-            Authorization: `Bearer ${import.meta.env.VITE_FLUTTERWAVE_SECRET_KEY}`,
             "Content-Type": "application/json",
           },
+          body: JSON.stringify({ tx_ref: txRef }), // Send tx_ref in body
         });
 
         const data = await response.json();
-        console.log("Verification result:", data);
+        console.log("Verification result from backend:", data);
 
-        if (data.status === "success" && data.data.status === "successful") {
+        // Check response.ok and backend's 'verified' flag
+        if (response.ok && data.verified) {
           setStatus("success");
-
-          // Update Supabase record
-          await supabase
-            .from("donations")
-            .update({ status: "successful" })
-            .eq("flutterwave_tx_ref", txRef);
+          // Supabase update is now handled by the backend
         } else {
           setStatus("failed");
-
-          // Update Supabase record
-          await supabase
-            .from("donations")
-            .update({ status: "failed" })
-            .eq("flutterwave_tx_ref", txRef);
+          // Supabase update is now handled by the backend
         }
       } catch (err) {
-        console.error("Verification error:", err);
+        console.error("Verification error calling backend:", err);
         setStatus("failed");
       }
     };

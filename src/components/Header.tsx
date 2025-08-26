@@ -51,10 +51,10 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden lg:block">
             <Link 
-              to="/get-involved"
+              to="/donate"
               className="bg-teal-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-teal-700 transition-colors"
             >
-              Get Involved
+              Donate 
             </Link>
           </div>
 

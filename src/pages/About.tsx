@@ -12,7 +12,6 @@ const About = () => {
     "To support water conservation efforts.",
     "To improve management of hypertension and diabetes.",
     "To increase awareness and education on NCDs prevention and control.",
-    "To support cancer screening and early detection.",
     "To strengthen health systems to address WASH and NCDs.",
     "To improve community engagements and participation in WASH and NCDs initiative."
   ];
@@ -23,7 +22,7 @@ const About = () => {
     "Promoting good hygiene practices",
     "Influence policy making to safe guard water sources",
     "Prevention and awareness on NCDs",
-    "Early detection and diagnosis of NCDs such as Cancer",
+    "Early detection and diagnosis of NCDs",
     "Effective Management and treatment of NCDs through referrals and linkages",
     "Mobilize for resources",
     "Foster partnerships with organizations, individuals, Governments locally and internationally"
@@ -86,31 +85,31 @@ const About = () => {
       year: "2018",
       title: "Foundation",
       description: "Biotisho Kilimanjaro CBO was founded by trained community health promoters from Isinet health unit.",
-      image: "https://images.pexels.com/photos/6994820/pexels-photo-6994820.jpeg?auto=compress&cs=tinysrgb&w=300"
+      image: "/foundation.jpg"
     },
     {
       year: "2019",
       title: "First Programs",
       description: "Launched initial WASH education programs and began NCDs awareness campaigns in local communities.",
-      image: "https://images.pexels.com/photos/7551659/pexels-photo-7551659.jpeg?auto=compress&cs=tinysrgb&w=300"
+      image: "/firstprogram.png"
     },
     {
       year: "2021",
       title: "Expansion",
       description: "Extended operations to cover both Imbirikani/Eselenkei and Entonet/Lenkisim wards.",
-      image: "https://images.pexels.com/photos/4047186/pexels-photo-4047186.jpeg?auto=compress&cs=tinysrgb&w=300"
+      image: "/expansion.jpg"
     },
     {
       year: "2023",
       title: "Infrastructure",
       description: "Completed first water points and sanitation facilities in partnership with local government.",
-      image: "https://images.pexels.com/photos/1117209/pexels-photo-1117209.jpeg?auto=compress&cs=tinysrgb&w=300"
+      image: "/waterpoint.png"
     },
     {
       year: "2025",
       title: "Today",
       description: "Serving over 5,000 community members with comprehensive WASH and NCDs programs.",
-      image: "https://images.pexels.com/photos/6995104/pexels-photo-6995104.jpeg?auto=compress&cs=tinysrgb&w=300"
+      image: "/today.jpg"
     }
   ];
 

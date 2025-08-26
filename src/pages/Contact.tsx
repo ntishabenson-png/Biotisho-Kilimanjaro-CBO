@@ -218,7 +218,7 @@ const Contact = () => {
                 ))}
               </div>
 
-              {/* Office Hours */}
+              {/* Office Hours
               <div className="bg-white rounded-xl p-6 shadow-md">
                 <div className="flex items-center mb-4">
                   <div className="bg-orange-100 p-3 rounded-lg mr-4">
@@ -234,7 +234,7 @@ const Contact = () => {
                     </div>
                   ))}
                 </div>
-              </div>
+              </div> */}
 
               {/* Social Media */}
               <div className="bg-white rounded-xl p-6 shadow-md">
@@ -247,28 +247,28 @@ const Contact = () => {
                 <p className="text-gray-600 mb-4">Stay connected with our latest updates and community stories.</p>
                 <div className="flex space-x-4">
                   <a 
-                    href="#" 
+                    href="https://www.facebook.com/share/1FXNeiN3MH/" 
                     className="bg-blue-600 p-3 rounded-full text-white hover:bg-blue-700 transition-colors"
                     aria-label="Facebook"
                   >
                     <Facebook className="w-5 h-5" />
                   </a>
                   <a 
-                    href="#" 
+                    href="https://x.com/biotisho?t=nbYdCPHqSl2P1EGb4AGPAw&s=09" 
                     className="bg-sky-500 p-3 rounded-full text-white hover:bg-sky-600 transition-colors"
                     aria-label="Twitter"
                   >
                     <Twitter className="w-5 h-5" />
                   </a>
-                  <a 
+                  {/* <a 
                     href="#" 
                     className="bg-pink-600 p-3 rounded-full text-white hover:bg-pink-700 transition-colors"
                     aria-label="Instagram"
                   >
                     <Instagram className="w-5 h-5" />
-                  </a>
+                  </a> */}
                   <a 
-                    href="#" 
+                    href="https://www.linkedin.com/company/biotisho-community-organization/" 
                     className="bg-blue-700 p-3 rounded-full text-white hover:bg-blue-800 transition-colors"
                     aria-label="LinkedIn"
                   >

@@ -58,7 +58,7 @@ const Homepage = () => {
       icon: <Activity className="w-8 h-8 text-red-500" />,
       title: 'NCDs',
       subtitle: 'Non-Communicable Diseases',
-      description: 'Prevention, early detection, and management of diabetes, hypertension, and cancer through community health initiatives.',
+      description: 'Prevention, early detection, and management of diabetes and hypertension through community health initiatives.',
       color: 'from-red-500 to-pink-500'
     },
     {
@@ -72,16 +72,16 @@ const Homepage = () => {
 
   const testimonials = [
     {
-      name: 'Mary Sankale',
-      role: 'Community Member',
-      quote: 'Through Biotisho\'s health education, my family now has access to clean water and we understand the importance of proper hygiene.',
-      image: 'https://images.pexels.com/photos/1181712/pexels-photo-1181712.jpeg?auto=compress&cs=tinysrgb&w=150'
+      name: 'Jeremiah Melita',
+      role: 'CEO',
+      quote: 'As CEO, I am committed to our mission of ensuring everyone has access to clean water and proper sanitation. Through health education and on-the-ground support, we are creating a lasting impact, transforming communities and families.',
+      image: '/JeremiaMelita.jpg'
     },
     {
-      name: 'Joseph Matiko',
+      name: 'Ntisha Benson',
       role: 'Local Leader',
       quote: 'The NCDs screening program helped detect my diabetes early. I am grateful for the referral and continued support.',
-      image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150'
+      image: '/NtishaBenson.png'
     },
     {
       name: 'Grace Nasieku',
@@ -108,7 +108,7 @@ const Homepage = () => {
       icon: <Shield className="w-8 h-8 text-purple-600" />,
       title: 'Partner',
       description: 'Collaborate with us to amplify our impact and reach more communities.',
-      cta: 'Partner With Us'
+      cta: <Link to="/get-involved" className="btn btn-primary">Partner With Us</Link>
     }
   ];
 
@@ -116,20 +116,20 @@ const Homepage = () => {
     {
       title: 'New Water Point Completed in Kalesirua Village',
       summary: 'Community members now have access to clean water within walking distance, reducing waterborne diseases by 40%.',
-      date: '2025-01-15',
-      image: 'https://images.pexels.com/photos/1117209/pexels-photo-1117209.jpeg?auto=compress&cs=tinysrgb&w=400'
+      date: '2023-01-15',
+      image: '/waterpoint.png'
     },
     {
       title: 'Successful Diabetes Screening Campaign',
       summary: 'Over 200 community members screened for diabetes, with 15 cases detected early and referred for treatment.',
       date: '2025-01-10',
-      image: 'https://images.pexels.com/photos/4047186/pexels-photo-4047186.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: '/diabetescampaign.png'
     },
     {
       title: 'Tree Planting Initiative Launches',
       summary: 'Environmental conservation program begins with goal to plant 2,000 trees across both operational wards.',
       date: '2025-01-05',
-      image: 'https://images.pexels.com/photos/1445416/pexels-photo-1445416.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: 'data:image/jpeg;base64,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'
     }
   ];
 
@@ -230,7 +230,7 @@ const Homepage = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.pexels.com/photos/7551659/pexels-photo-7551659.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src="/foundation.jpg"
                 alt="Community health workers"
                 className="rounded-2xl shadow-2xl"
               />

@@ -24,16 +24,13 @@ const Footer = () => {
             
             {/* Social Media */}
             <div className="flex space-x-4">
-              <a href="#" className="bg-gray-800 p-2 rounded-full hover:bg-teal-600 transition-colors">
+              <a href="https://www.facebook.com/share/1FXNeiN3MH/" className="bg-gray-800 p-2 rounded-full hover:bg-teal-600 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="bg-gray-800 p-2 rounded-full hover:bg-teal-600 transition-colors">
+              <a href="https://x.com/biotisho?t=nbYdCPHqSl2P1EGb4AGPAw&s=09" className="bg-gray-800 p-2 rounded-full hover:bg-teal-600 transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="bg-gray-800 p-2 rounded-full hover:bg-teal-600 transition-colors">
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="bg-gray-800 p-2 rounded-full hover:bg-teal-600 transition-colors">
+              <a href="https://www.linkedin.com/company/biotisho-community-organization/" className="bg-gray-800 p-2 rounded-full hover:bg-teal-600 transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>

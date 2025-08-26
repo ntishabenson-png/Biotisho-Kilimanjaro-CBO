@@ -7,10 +7,9 @@ const DonatePage: React.FC = () => {
       {/* Page Header */}
       <div className="bg-green-600 text-white py-12">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-4xl font-bold mb-4">Support Conservation in Kilimanjaro</h1>
+          <h1 className="text-4xl font-bold mb-4">Join Us in Building a Healthier Future.</h1>
           <p className="text-xl text-green-100 max-w-3xl mx-auto">
-            Join us in protecting the unique ecosystems and wildlife of the Kilimanjaro region. 
-            Your donation directly supports conservation efforts, community education, and sustainable development.
+          Your support directly funds health education, disease prevention, and access to clean water.
           </p>
         </div>
       </div>
@@ -21,7 +20,7 @@ const DonatePage: React.FC = () => {
       </div>
 
       {/* Additional Information */}
-      <div className="bg-white py-12">
+      {/* <div className="bg-white py-12">
         <div className="max-w-4xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
@@ -55,7 +54,7 @@ const DonatePage: React.FC = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

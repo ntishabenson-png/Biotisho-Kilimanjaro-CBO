@@ -9,7 +9,8 @@ import GetInvolved from './pages/GetInvolved';
 import Resources from './pages/Resources';
 import Contact from './pages/Contact';
 import DonatePage from './pages/DonatePage';
-import DonationStatus from './pages/donation-status';
+import DonationStatus from './pages/DonationStatus'
+
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
             <Route path="/resources" element={<Resources />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/donate" element={<DonatePage />} />
-            <Route path="/donation-status" element={<DonationStatus />} />
+            <Route path="/donation-success" element={<DonationStatus />} />
 
           </Routes>
         </main>

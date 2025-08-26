@@ -9,7 +9,7 @@ const OurWork = () => {
     {
       title: "Kalesirua Village Water Point",
       summary: "Construction and maintenance of a community water point serving 200+ households",
-      image: "https://images.pexels.com/photos/1117209/pexels-photo-1117209.jpeg?auto=compress&cs=tinysrgb&w=500",
+      image: "/waterpoint.png",
       impact: {
         beneficiaries: "1,000+ people",
         waterPointsInstalled: "3 points",
@@ -22,7 +22,7 @@ const OurWork = () => {
     {
       title: "School Sanitation Initiative",
       summary: "Improving sanitation infrastructure in 5 primary schools across both operational wards",
-      image: "https://images.pexels.com/photos/8363018/pexels-photo-8363018.jpeg?auto=compress&cs=tinysrgb&w=500",
+      image: "/schoolsanitation.jpg",
       impact: {
         beneficiaries: "1000+ students",
         facilitiesBuilt: "10 sanitation facilities",
@@ -30,12 +30,12 @@ const OurWork = () => {
       },
       location: "Imbirikani & Entonet Wards",
       status: "Ongoing",
-      description: "Biotisho Kilimanjaro CBO visited Olepolos ECD School an institution we first highlighted in June due to its dire need for improved infrastructure. At the time, we raised concern over the complete lack of proper sanitation facilities, including basic pit latrines, which continues to compromise the health, safety, and dignity of the young learners.In response, our team returned today to engage with community members and local stakeholders in a lobbying effort aimed at securing essential sanitation structures for the school. We believe that every child deserves a safe and dignified learning environment, and that begins with access to proper water, sanitation, and hygiene (WASH) facilities.Our mission remains clear, to improve lives through sustainable WASH solutions that promote health, dignity, and quality of life for all"
+      description: "Biotisho CBO revisited Olepolos ECD School to address its critical lack of sanitation facilities. Our team engaged with the community in a lobbying effort to secure proper WASH structures, essential for the health and dignity of young learners. Our mission is to ensure every child has access to a safe and dignified learning environment."
     },
     {
       title: "Community Hygiene Education",
       summary: "Door-to-door hygiene education and behavior change campaigns",
-      image: "https://images.pexels.com/photos/7551659/pexels-photo-7551659.jpeg?auto=compress&cs=tinysrgb&w=500",
+      image: "/community.jpg",
       impact: {
         beneficiaries: "300+ households",
         educationSessions: "150 sessions",
@@ -48,7 +48,7 @@ const OurWork = () => {
     {
       title: "Waste Management Program",
       summary: "Community-based solid waste collection and management system",
-      image: "https://images.pexels.com/photos/9324304/pexels-photo-9324304.jpeg?auto=compress&cs=tinysrgb&w=500",
+      image: "/waste.jpg",
       impact: {
         beneficiaries: "100+ households",
         wasteCollected: "50 tons monthly",
@@ -91,16 +91,16 @@ const OurWork = () => {
 
   const successStories = [
     {
-      name: "Margaret Sankale",
+      name: "Mama Sankale",
       story: "Thanks to the water point in our village, my children no longer miss school due to water-related illnesses. The 2-hour daily walk for water is now a 10-minute walk.",
       impact: "Improved health and education outcomes",
-      image: "https://images.pexels.com/photos/1181712/pexels-photo-1181712.jpeg?auto=compress&cs=tinysrgb&w=200"
+      image: "/mamatip.jpg"
     },
     {
       name: "John Matiko",
       story: "The diabetes screening camp detected my condition early. With proper medication and support group participation, I'm managing my health well and living normally.",
       impact: "Early detection saved his life",
-      image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=200"
+      image: "/me.jpg"
     },
     {
       name: "Rose Nasieku",
