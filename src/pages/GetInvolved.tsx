@@ -1,15 +1,9 @@
 import React, { useState } from 'react';
 import { Users, Heart, Handshake, ArrowRight, CheckCircle, DollarSign, Clock, Award } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const GetInvolved = () => {
-  const [volunteerForm, setVolunteerForm] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    interests: '',
-    availability: '',
-    experience: ''
-  });
+
 
   const [partnerForm, setPartnerForm] = useState({
     organizationName: '',
@@ -21,36 +15,36 @@ const GetInvolved = () => {
     message: ''
   });
 
-  const volunteerOpportunities = [
-    {
-      title: "Community Health Educator",
-      description: "Conduct health education sessions on WASH and NCDs prevention in community settings.",
-      timeCommitment: "4-6 hours/week",
-      requirements: ["Basic health knowledge", "Good communication skills", "Community engagement experience"],
-      impact: "Reach 50+ community members weekly"
-    },
-    {
-      title: "Data Collection Assistant",
-      description: "Help collect and manage data from our various programs and screening activities.",
-      timeCommitment: "2-4 hours/week",
-      requirements: ["Basic computer skills", "Attention to detail", "Ability to work with numbers"],
-      impact: "Support evidence-based program improvements"
-    },
-    {
-      title: "Water Point Maintenance Volunteer",
-      description: "Assist in routine maintenance and monitoring of community water points.",
-      timeCommitment: "6-8 hours/month",
-      requirements: ["Technical aptitude", "Physical fitness", "Problem-solving skills"],
-      impact: "Ensure 2000+ people have consistent water access"
-    },
-    {
-      title: "Event Organizer",
-      description: "Help organize and coordinate health screening camps and community events.",
-      timeCommitment: "Flexible",
-      requirements: ["Organizational skills", "Local connections", "Event planning experience"],
-      impact: "Enable large-scale community health interventions"
-    }
-  ];
+  // const volunteerOpportunities = [
+  //   {
+  //     title: "Community Health Educator",
+  //     description: "Conduct health education sessions on WASH and NCDs prevention in community settings.",
+  //     timeCommitment: "4-6 hours/week",
+  //     requirements: ["Basic health knowledge", "Good communication skills", "Community engagement experience"],
+  //     impact: "Reach 50+ community members weekly"
+  //   },
+  //   {
+  //     title: "Data Collection Assistant",
+  //     description: "Help collect and manage data from our various programs and screening activities.",
+  //     timeCommitment: "2-4 hours/week",
+  //     requirements: ["Basic computer skills", "Attention to detail", "Ability to work with numbers"],
+  //     impact: "Support evidence-based program improvements"
+  //   },
+  //   {
+  //     title: "Water Point Maintenance Volunteer",
+  //     description: "Assist in routine maintenance and monitoring of community water points.",
+  //     timeCommitment: "6-8 hours/month",
+  //     requirements: ["Technical aptitude", "Physical fitness", "Problem-solving skills"],
+  //     impact: "Ensure 2000+ people have consistent water access"
+  //   },
+  //   {
+  //     title: "Event Organizer",
+  //     description: "Help organize and coordinate health screening camps and community events.",
+  //     timeCommitment: "Flexible",
+  //     requirements: ["Organizational skills", "Local connections", "Event planning experience"],
+  //     impact: "Enable large-scale community health interventions"
+  //   }
+  // ];
 
   const donationImpacts = [
     {
@@ -98,12 +92,12 @@ const GetInvolved = () => {
     }
   ];
 
-  const handleVolunteerSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle volunteer form submission
-    console.log('Volunteer form submitted:', volunteerForm);
-    alert('Thank you for your interest! We will contact you soon.');
-  };
+  // const handleVolunteerSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   // Handle volunteer form submission
+  //   console.log('Volunteer form submitted:', volunteerForm);
+  //   alert('Thank you for your interest! We will contact you soon.');
+  // };
 
   const handlePartnerSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -131,11 +125,11 @@ const GetInvolved = () => {
         </div>
       </section>
 
-      {/* Three Main Ways to Get Involved */}
+      {/* Main Ways to Get Involved */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-8">
-            <div className="text-center">
+            {/* <div className="text-center">
               <div className="bg-teal-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Users className="w-10 h-10 text-teal-600" />
               </div>
@@ -146,7 +140,7 @@ const GetInvolved = () => {
               <a href="#volunteer" className="inline-flex items-center text-teal-600 font-semibold hover:text-teal-700 transition-colors">
                 Join as Volunteer <ArrowRight className="ml-2 w-4 h-4" />
               </a>
-            </div>
+            </div> */}
 
             <div className="text-center">
               <div className="bg-red-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -177,7 +171,7 @@ const GetInvolved = () => {
         </div>
       </section>
 
-      {/* Volunteer Section */}
+      {/* Volunteer Section
       <section id="volunteer" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -218,7 +212,7 @@ const GetInvolved = () => {
           </div>
 
           {/* Volunteer Form */}
-          <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 max-w-4xl mx-auto">
+          {/* <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Volunteer Application</h3>
             <form onSubmit={handleVolunteerSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
@@ -326,9 +320,9 @@ const GetInvolved = () => {
                 </button>
               </div>
             </form>
-          </div>
-        </div>
-      </section>
+          </div> */}
+        {/* </div>
+      </section> */} 
 
       {/* Donate Section */}
       <section id="donate" className="py-20 bg-white">
@@ -355,7 +349,7 @@ const GetInvolved = () => {
           <div className="bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl p-8 lg:p-12 text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Make a Donation</h3>
             <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-              Choose your donation amount or enter a custom amount. Every contribution helps us reach more communities with vital health services.
+              Enter donation amount. Every contribution helps us reach more communities with vital health services.
             </p>
             
             <div className="flex flex-wrap justify-center gap-4 mb-8">

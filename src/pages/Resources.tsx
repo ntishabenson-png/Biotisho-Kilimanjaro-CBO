@@ -14,7 +14,7 @@ const Resources = () => {
       description: "Comprehensive guide on implementing water, sanitation, and hygiene programs in rural communities.",
       downloadUrl: "#",
       fileSize: "2.5 MB",
-      downloadCount: 342,
+      downloadCount: 65,
       date: "2025-01-15",
       image: "https://images.pexels.com/photos/1117209/pexels-photo-1117209.jpeg?auto=compress&cs=tinysrgb&w=300",
       icon: <FileText className="w-6 h-6 text-blue-600" />

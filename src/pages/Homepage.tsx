@@ -29,10 +29,10 @@ const Homepage = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            animateCounter(5000, (value) => setCounters(prev => ({ ...prev, people: value })));
-            animateCounter(25, (value) => setCounters(prev => ({ ...prev, waterPoints: value })));
+            animateCounter(2500, (value) => setCounters(prev => ({ ...prev, people: value })));
+            animateCounter(18, (value) => setCounters(prev => ({ ...prev, waterPoints: value })));
             animateCounter(1200, (value) => setCounters(prev => ({ ...prev, trees: value })));
-            animateCounter(3000, (value) => setCounters(prev => ({ ...prev, screenings: value })));
+            animateCounter(1000, (value) => setCounters(prev => ({ ...prev, screenings: value })));
             observer.disconnect();
           }
         });
@@ -60,6 +60,13 @@ const Homepage = () => {
       subtitle: 'Non-Communicable Diseases',
       description: 'Prevention, early detection, and management of diabetes, hypertension, and cancer through community health initiatives.',
       color: 'from-red-500 to-pink-500'
+    },
+    {
+      icon: <Activity className="w-8 h-8 text-red-500" />,
+      title: 'Environment restoration',
+      subtitle: 'Climate action',
+      description: 'Environment restoration and cleaning especially water sources so at the downstream communities can access clean water',
+      color: 'from-red-500 to-pink-500'
     }
   ];
 
@@ -71,7 +78,7 @@ const Homepage = () => {
       image: 'https://images.pexels.com/photos/1181712/pexels-photo-1181712.jpeg?auto=compress&cs=tinysrgb&w=150'
     },
     {
-      name: 'Joseph Kiprotich',
+      name: 'Joseph Matiko',
       role: 'Local Leader',
       quote: 'The NCDs screening program helped detect my diabetes early. I am grateful for the referral and continued support.',
       image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150'
@@ -85,18 +92,18 @@ const Homepage = () => {
   ];
 
   const getInvolvedOptions = [
+    // {
+    //   icon: <Users className="w-8 h-8 text-teal-600" />,
+    //   title: 'Volunteer',
+    //   description: 'Join our community health promoters and make a direct impact in improving lives.',
+    //   cta: 'Join Us'
+    // },
     {
-      icon: <Users className="w-8 h-8 text-teal-600" />,
-      title: 'Volunteer',
-      description: 'Join our community health promoters and make a direct impact in improving lives.',
-      cta: 'Join Us'
-    },
-    {
-      icon: <HeartHandshake className="w-8 h-8 text-orange-500" />,
-      title: 'Donate',
-      description: 'Support our WASH and NCDs programs with your generous contribution.',
-      cta: 'Donate Now'
-    },
+    icon: <HeartHandshake className="w-8 h-8 text-orange-500" />,
+    title: 'Donate',
+    description: 'Support our programs with your generous contribution.',
+    cta: <Link to="/donate" className="btn btn-primary">Donate Now</Link>
+  },
     {
       icon: <Shield className="w-8 h-8 text-purple-600" />,
       title: 'Partner',
@@ -142,11 +149,10 @@ const Homepage = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             Biotisho Kilimanjaro
-            <span className="block text-teal-400">Good Healthy Life</span>
+            <span className="block text-teal-400">Health is Wealth</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Empowering communities in Kajiado County through WASH and NCDs prevention, 
-            one household at a time.
+            Empowering communities in Kajiado County through WASH, NCDs prevention and enviromental restoration programs-one household at a time.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
@@ -243,7 +249,7 @@ const Homepage = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Focus Areas</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We concentrate our efforts on two critical areas that have the greatest impact on community health outcomes.
+              We concentrate our efforts on critical areas that have the greatest impact on community health outcomes.
             </p>
           </div>
           

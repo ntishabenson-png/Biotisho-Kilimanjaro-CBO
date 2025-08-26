@@ -41,23 +41,22 @@ const Contact = () => {
       icon: <Phone className="w-6 h-6 text-teal-600" />,
       title: "Phone Numbers",
       details: [
-        "+254 XXX XXX XXX",
-        "+254 XXX XXX XXX"
+        "+254725223869",
+        "+254703809618"
       ]
     },
     {
       icon: <Mail className="w-6 h-6 text-teal-600" />,
       title: "Email Address",
       details: [
-        "info@biotisho.org",
-        "contact@biotisho.org"
+        "biotishocbo@gmail.com",
       ]
     },
     {
       icon: <MessageCircle className="w-6 h-6 text-teal-600" />,
       title: "WhatsApp",
       details: [
-        "+254 XXX XXX XXX",
+        "+254725223869",
         "Available 8 AM - 6 PM EAT"
       ]
     }
@@ -65,7 +64,7 @@ const Contact = () => {
 
   const officeHours = [
     { day: "Monday - Friday", hours: "8:00 AM - 5:00 PM" },
-    { day: "Saturday", hours: "9:00 AM - 2:00 PM" },
+    { day: "Saturday", hours: "Closed" },
     { day: "Sunday", hours: "Closed" },
     { day: "Emergency", hours: "24/7 Health Line Available" }
   ];
@@ -84,7 +83,7 @@ const Contact = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">Contact Us</h1>
           <p className="text-xl text-teal-100 max-w-3xl mx-auto leading-relaxed">
-            Get in touch with our team to learn more about our programs, volunteer opportunities, or partnership possibilities.
+            Get in touch with our team to learn more about our programs or partnership possibilities.
           </p>
         </div>
       </section>
@@ -155,7 +154,6 @@ const Contact = () => {
                       required
                     >
                       <option value="">Select a subject</option>
-                      <option value="volunteer">Volunteer Opportunities</option>
                       <option value="partnership">Partnership Inquiry</option>
                       <option value="donation">Donation Information</option>
                       <option value="programs">Program Information</option>
@@ -319,7 +317,7 @@ const Contact = () => {
                 </p>
                 <p className="flex items-center">
                   <Phone className="w-4 h-4 mr-2 text-teal-600" />
-                  +254 XXX XXX XXX
+                  +254725223869
                 </p>
               </div>
             </div>
@@ -332,7 +330,7 @@ const Contact = () => {
                 </p>
                 <p className="flex items-center">
                   <Phone className="w-4 h-4 mr-2 text-teal-600" />
-                  +254 XXX XXX XXX
+                  +254703809618
                 </p>
               </div>
             </div>
@@ -353,7 +351,7 @@ const Contact = () => {
                 to="/get-involved"
                 className="bg-white text-teal-600 px-6 lg:px-8 py-3 lg:py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-200 hover:scale-105 hover:shadow-lg"
               >
-                Become a Volunteer
+              Donate today 
               </Link>
             </div>
           </div>

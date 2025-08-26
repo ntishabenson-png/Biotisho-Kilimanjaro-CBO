@@ -8,55 +8,55 @@ const OurWork = () => {
   const washProjects = [
     {
       title: "Kalesirua Village Water Point",
-      summary: "Construction and maintenance of a community water point serving 500+ households",
+      summary: "Construction and maintenance of a community water point serving 200+ households",
       image: "https://images.pexels.com/photos/1117209/pexels-photo-1117209.jpeg?auto=compress&cs=tinysrgb&w=500",
       impact: {
-        beneficiaries: "2,000+ people",
+        beneficiaries: "1,000+ people",
         waterPointsInstalled: "3 points",
         diseaseReduction: "40% reduction in waterborne diseases"
       },
       location: "Kalesirua Village",
       status: "Completed",
-      description: "A comprehensive water access project that included drilling, pump installation, and community training on maintenance. The project has dramatically reduced the distance families need to travel for clean water."
+      description: "A comprehensive water access project that included protection of water sources from pollution and contamination and community training on water purification techniques. The project has dramatically reduced the distance families need to travel for clean water."
     },
     {
       title: "School Sanitation Initiative",
       summary: "Improving sanitation infrastructure in 5 primary schools across both operational wards",
       image: "https://images.pexels.com/photos/8363018/pexels-photo-8363018.jpeg?auto=compress&cs=tinysrgb&w=500",
       impact: {
-        beneficiaries: "1,500 students",
-        facilitiesBuilt: "20 sanitation facilities",
+        beneficiaries: "1000+ students",
+        facilitiesBuilt: "10 sanitation facilities",
         attendanceImprovement: "25% increase in attendance"
       },
       location: "Imbirikani & Entonet Wards",
       status: "Ongoing",
-      description: "Constructing modern, gender-separated sanitation facilities with handwashing stations and menstrual hygiene management facilities. Includes hygiene education programs for students and teachers."
+      description: "Biotisho Kilimanjaro CBO visited Olepolos ECD School an institution we first highlighted in June due to its dire need for improved infrastructure. At the time, we raised concern over the complete lack of proper sanitation facilities, including basic pit latrines, which continues to compromise the health, safety, and dignity of the young learners.In response, our team returned today to engage with community members and local stakeholders in a lobbying effort aimed at securing essential sanitation structures for the school. We believe that every child deserves a safe and dignified learning environment, and that begins with access to proper water, sanitation, and hygiene (WASH) facilities.Our mission remains clear, to improve lives through sustainable WASH solutions that promote health, dignity, and quality of life for all"
     },
     {
       title: "Community Hygiene Education",
       summary: "Door-to-door hygiene education and behavior change campaigns",
       image: "https://images.pexels.com/photos/7551659/pexels-photo-7551659.jpeg?auto=compress&cs=tinysrgb&w=500",
       impact: {
-        beneficiaries: "3,000+ households",
+        beneficiaries: "300+ households",
         educationSessions: "150 sessions",
         behaviorChange: "60% improvement in practices"
       },
       location: "All Operational Areas",
       status: "Ongoing",
-      description: "Comprehensive behavior change communication program focusing on proper handwashing, safe water storage, waste management, and food hygiene practices. Conducted by trained community health promoters."
+      description: "Comprehensive program focusing on proper handwashing, safe water storage, waste management and food hygiene practices. Conducted by trained community health promoters."
     },
     {
       title: "Waste Management Program",
       summary: "Community-based solid waste collection and management system",
       image: "https://images.pexels.com/photos/9324304/pexels-photo-9324304.jpeg?auto=compress&cs=tinysrgb&w=500",
       impact: {
-        beneficiaries: "1,000+ households",
+        beneficiaries: "100+ households",
         wasteCollected: "50 tons monthly",
         jobsCreated: "15 local jobs"
       },
       location: "Urban Centers",
       status: "Ongoing",
-      description: "Establishing sustainable waste collection routes, composting sites, and recycling initiatives while creating income opportunities for community members."
+      description: "Establishing sustainable waste collection routes, composting sites, and recycling initiatives while creating income opportunities for community members. We also organize community clean up drives to to make sure that people live in a clean up environment"
     }
   ];
 
@@ -66,39 +66,13 @@ const OurWork = () => {
       summary: "Regular community screening camps for early detection of NCDs",
       image: "https://images.pexels.com/photos/4047186/pexels-photo-4047186.jpeg?auto=compress&cs=tinysrgb&w=500",
       impact: {
-        beneficiaries: "2,500+ people screened",
+        beneficiaries: "250+ people screened",
         casesDetected: "180 new cases",
         referralsMade: "150 successful referrals"
       },
       location: "All Operational Areas",
       status: "Ongoing",
-      description: "Monthly screening camps using portable equipment to test blood pressure, blood sugar levels, and BMI. Includes immediate referral system to formal health facilities for confirmed cases."
-    },
-    {
-      title: "Cancer Awareness Campaign",
-      summary: "Education and early detection programs for common cancers",
-      image: "https://images.pexels.com/photos/7551659/pexels-photo-7551659.jpeg?auto=compress&cs=tinysrgb&w=500",
-      impact: {
-        beneficiaries: "1,800+ people reached",
-        screeningsArranged: "120 cervical screenings",
-        earlyDetections: "8 early-stage cases"
-      },
-      location: "Community Health Centers",
-      status: "Ongoing",
-      description: "Comprehensive cancer education focusing on cervical, breast, and prostate cancers. Partners with county health services to provide screening services and follow-up care."
-    },
-    {
-      title: "NCDs Support Groups",
-      summary: "Peer support networks for people living with chronic conditions",
-      image: "https://images.pexels.com/photos/7551726/pexels-photo-7551726.jpeg?auto=compress&cs=tinysrgb&w=500",
-      impact: {
-        beneficiaries: "200+ group members",
-        groupsFormed: "8 support groups",
-        adherenceImprovement: "70% medication adherence"
-      },
-      location: "Both Operational Wards",
-      status: "Ongoing",
-      description: "Facilitating peer support groups for diabetes and hypertension patients, providing education on medication adherence, lifestyle changes, and emotional support."
+      description: "Monthly screening camps using portable equipment to test blood pressure, blood sugar levels, and BMI. Includes immediate referral system to Kalesirua Dispensary for confirmed cases."
     },
     {
       title: "Nutrition Education Program",
@@ -111,7 +85,7 @@ const OurWork = () => {
       },
       location: "Community Centers",
       status: "Ongoing",
-      description: "Interactive nutrition education sessions with practical cooking demonstrations using locally available foods. Focus on diabetes-friendly and heart-healthy meal preparation."
+      description: "Interactive nutrition education sessions where school-going children arescreened for possible growth deficiencies by measuring their height, weight, and Mid-Upper Arm Circumference (MUAC).We also train the community on diabetes-friendly and good nutrition"
     }
   ];
 
@@ -123,7 +97,7 @@ const OurWork = () => {
       image: "https://images.pexels.com/photos/1181712/pexels-photo-1181712.jpeg?auto=compress&cs=tinysrgb&w=200"
     },
     {
-      name: "John Kiprotich",
+      name: "John Matiko",
       story: "The diabetes screening camp detected my condition early. With proper medication and support group participation, I'm managing my health well and living normally.",
       impact: "Early detection saved his life",
       image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=200"

@@ -8,6 +8,8 @@ import OurWork from './pages/OurWork';
 import GetInvolved from './pages/GetInvolved';
 import Resources from './pages/Resources';
 import Contact from './pages/Contact';
+import DonatePage from './pages/DonatePage';
+import DonationStatus from './pages/donation-status';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
             <Route path="/get-involved" element={<GetInvolved />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/donate" element={<DonatePage />} />
+            <Route path="/donation-status" element={<DonationStatus />} />
 
           </Routes>
         </main>

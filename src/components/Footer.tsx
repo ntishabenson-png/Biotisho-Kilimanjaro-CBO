@@ -15,7 +15,7 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold">Biotisho Kilimanjaro CBO</h3>
-                <p className="text-sm text-gray-400">Good Healthy Life</p>
+                <p className="text-sm text-gray-400">Health is wealth</p>
               </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
@@ -57,15 +57,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-teal-400 flex-shrink-0" />
-                <span className="text-gray-300 text-sm">Kajiado County, Loitokitok Sub County, Kenya</span>
+                <span className="text-gray-300 text-sm">P.O BOX 203-00209</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-teal-400 flex-shrink-0" />
-                <span className="text-gray-300 text-sm">+254703809618</span>
+                <span className="text-gray-300 text-sm">+254725223869</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-teal-400 flex-shrink-0" />
-                <span className="text-gray-300 text-sm">info@biotisho.org</span>
+                <span className="text-gray-300 text-sm">biotishocbo@gmail.com</span>
               </div>
             </div>
           </div>

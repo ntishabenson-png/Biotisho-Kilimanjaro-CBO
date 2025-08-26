@@ -145,8 +145,7 @@ const About = () => {
                 <h2 className="text-3xl font-bold text-gray-900">Our Mission</h2>
               </div>
               <p className="text-lg text-gray-700 leading-relaxed">
-                To improve the health and well-being of communities in Kajiado County through comprehensive WASH and NCDs programs, 
-                empowering community members to take ownership of their health while bridging the gap between formal health facilities and local communities.
+                Improving lives through sustainable WASH solutions that promote health, dignity and quality
               </p>
             </div>
             
@@ -158,9 +157,8 @@ const About = () => {
                 <h2 className="text-3xl font-bold text-gray-900">Our Vision</h2>
               </div>
               <p className="text-lg text-gray-700 leading-relaxed">
-                A healthy and empowered community where every individual has access to clean water, proper sanitation, 
-                and quality healthcare services, with effective prevention and management of non-communicable diseases.
-              </p>
+                A world where clean water, safe sanitation and healthy lives are for all.
+                </p>
             </div>
           </div>
         </div>
