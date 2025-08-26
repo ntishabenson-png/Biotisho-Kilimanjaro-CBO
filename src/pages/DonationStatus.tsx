@@ -64,7 +64,7 @@ const DonationStatus: React.FC = () => {
 
       {status === "failed" && (
         <div>
-          <h2 className="text-2xl font-bold text-red-600">❌ Payment Failed</h2>
+          <h2 className="text-2xl font-bold text-red-600"> Payment Failed</h2>
           <p className="mt-2 text-gray-700">
             Something went wrong. Please try again or contact support.
           </p>

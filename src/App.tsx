@@ -9,12 +9,13 @@ import GetInvolved from './pages/GetInvolved';
 import Resources from './pages/Resources';
 import Contact from './pages/Contact';
 import DonatePage from './pages/DonatePage';
-import DonationStatus from './pages/DonationStatus'
-
+import DonationStatus from './pages/DonationStatus';
+import ScrollToTop from './components/ScrollToTop'; // Import the new component
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen bg-white">
         <Header />
         <main>
@@ -27,7 +28,6 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/donate" element={<DonatePage />} />
             <Route path="/donation-success" element={<DonationStatus />} />
-
           </Routes>
         </main>
         <Footer />

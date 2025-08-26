@@ -11,6 +11,9 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
+// Use environment variable for the API URL
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+
 const GetInvolved = () => {
   const [partnerForm, setPartnerForm] = useState({
     organizationName: "",
@@ -21,37 +24,6 @@ const GetInvolved = () => {
     partnershipType: "",
     message: "",
   });
-
-  // const volunteerOpportunities = [
-  //   {
-  //     title: "Community Health Educator",
-  //     description: "Conduct health education sessions on WASH and NCDs prevention in community settings.",
-  //     timeCommitment: "4-6 hours/week",
-  //     requirements: ["Basic health knowledge", "Good communication skills", "Community engagement experience"],
-  //     impact: "Reach 50+ community members weekly"
-  //   },
-  //   {
-  //     title: "Data Collection Assistant",
-  //     description: "Help collect and manage data from our various programs and screening activities.",
-  //     timeCommitment: "2-4 hours/week",
-  //     requirements: ["Basic computer skills", "Attention to detail", "Ability to work with numbers"],
-  //     impact: "Support evidence-based program improvements"
-  //   },
-  //   {
-  //     title: "Water Point Maintenance Volunteer",
-  //     description: "Assist in routine maintenance and monitoring of community water points.",
-  //     timeCommitment: "6-8 hours/month",
-  //     requirements: ["Technical aptitude", "Physical fitness", "Problem-solving skills"],
-  //     impact: "Ensure 2000+ people have consistent water access"
-  //   },
-  //   {
-  //     title: "Event Organizer",
-  //     description: "Help organize and coordinate health screening camps and community events.",
-  //     timeCommitment: "Flexible",
-  //     requirements: ["Organizational skills", "Local connections", "Event planning experience"],
-  //     impact: "Enable large-scale community health interventions"
-  //   }
-  // ];
 
   const donationImpacts = [
     {
@@ -111,13 +83,42 @@ const GetInvolved = () => {
     },
   ];
 
-  const handlePartnerSubmit = (e: React.FormEvent) => {
+  const handlePartnerSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle partner form submission
     console.log("Partner form submitted:", partnerForm);
-    alert(
-      "Thank you for your interest in partnering with us! We will be in touch."
-    );
+
+    try {
+      // Use the API_URL variable for the fetch call
+      const response = await fetch(`${API_URL}/api/partner-inquiry`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(partnerForm),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send partnership inquiry.");
+      }
+
+      const result = await response.json();
+      console.log("Success:", result);
+      alert("Thank you for your interest! We will be in touch soon.");
+
+      // Clear the form on successful submission
+      setPartnerForm({
+        organizationName: "",
+        contactPerson: "",
+        email: "",
+        phone: "",
+        organizationType: "",
+        partnershipType: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("Error:", error);
+      alert("An error occurred. Please try again later.");
+    }
   };
 
   return (
@@ -145,19 +146,6 @@ const GetInvolved = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-8">
-            {/* <div className="text-center">
-              <div className="bg-teal-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="w-10 h-10 text-teal-600" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Volunteer</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                Use your skills and passion to directly impact community health outcomes through our various volunteer programs.
-              </p>
-              <a href="#volunteer" className="inline-flex items-center text-teal-600 font-semibold hover:text-teal-700 transition-colors">
-                Join as Volunteer <ArrowRight className="ml-2 w-4 h-4" />
-              </a>
-            </div> */}
-
             <div className="text-center">
               <div className="bg-red-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Heart className="w-10 h-10 text-red-500" />
