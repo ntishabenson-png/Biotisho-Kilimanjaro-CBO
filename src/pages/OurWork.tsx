@@ -64,7 +64,7 @@ const OurWork = () => {
     {
       title: "Diabetes & Hypertension Screening",
       summary: "Regular community screening camps for early detection of NCDs",
-      image: "https://images.pexels.com/photos/4047186/pexels-photo-4047186.jpeg?auto=compress&cs=tinysrgb&w=500",
+      image: "/kalesirua.jpg",
       impact: {
         beneficiaries: "250+ people screened",
         casesDetected: "180 new cases",
@@ -77,7 +77,7 @@ const OurWork = () => {
     {
       title: "Nutrition Education Program",
       summary: "Promoting healthy eating habits to prevent and manage NCDs",
-      image: "https://images.pexels.com/photos/6995104/pexels-photo-6995104.jpeg?auto=compress&cs=tinysrgb&w=500",
+      image: "/schoolgoingkids.jpg",
       impact: {
         beneficiaries: "1,200+ participants",
         cookingDemos: "50 demonstrations",
@@ -249,15 +249,15 @@ const OurWork = () => {
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <span className="text-gray-600">Population Reached</span>
-                  <span className="font-semibold text-gray-900">2,500+</span>
+                  <span className="font-semibold text-gray-900">10,500+</span>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-gray-600">Water Points</span>
-                  <span className="font-semibold text-gray-900">15</span>
+                  <span className="font-semibold text-gray-900">10</span>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-gray-600">Health Screenings</span>
-                  <span className="font-semibold text-gray-900">1,200</span>
+                  <span className="font-semibold text-gray-900">8,000</span>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-gray-600">Schools Supported</span>
@@ -271,15 +271,15 @@ const OurWork = () => {
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <span className="text-gray-600">Population Reached</span>
-                  <span className="font-semibold text-gray-900">2,800+</span>
+                  <span className="font-semibold text-gray-900">8,800+</span>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-gray-600">Water Points</span>
-                  <span className="font-semibold text-gray-900">10</span>
+                  <span className="font-semibold text-gray-900">6</span>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-gray-600">Health Screenings</span>
-                  <span className="font-semibold text-gray-900">1,800</span>
+                  <span className="font-semibold text-gray-900">5,000</span>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-gray-600">Schools Supported</span>

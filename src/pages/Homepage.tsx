@@ -29,10 +29,10 @@ const Homepage = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            animateCounter(2500, (value) => setCounters(prev => ({ ...prev, people: value })));
+            animateCounter(20000, (value) => setCounters(prev => ({ ...prev, people: value })));
             animateCounter(18, (value) => setCounters(prev => ({ ...prev, waterPoints: value })));
-            animateCounter(1200, (value) => setCounters(prev => ({ ...prev, trees: value })));
-            animateCounter(1000, (value) => setCounters(prev => ({ ...prev, screenings: value })));
+            animateCounter(12000, (value) => setCounters(prev => ({ ...prev, trees: value })));
+            animateCounter(10000, (value) => setCounters(prev => ({ ...prev, screenings: value })));
             observer.disconnect();
           }
         });
@@ -72,22 +72,22 @@ const Homepage = () => {
 
   const testimonials = [
     {
-      name: 'Jeremiah Melita',
-      role: 'CEO',
-      quote: 'As CEO, I am committed to our mission of ensuring everyone has access to clean water and proper sanitation. Through health education and on-the-ground support, we are creating a lasting impact, transforming communities and families.',
-      image: '/JeremiaMelita.jpg'
+      name: 'Saruni Ole Meoli',
+      role: 'Nyumba Kumi',
+      quote: 'Biotisho CBO has united our community, making it safer, healthier, and more empowered to work together for a better future.',
+      image: '/SaruniMeoli.jpg'
     },
     {
-      name: 'Ntisha Benson',
+      name: 'Richard Sarbabi',
       role: 'Local Leader',
       quote: 'The NCDs screening program helped detect my diabetes early. I am grateful for the referral and continued support.',
-      image: '/NtishaBenson.png'
+      image: '/RichardSarbabi.jpg'
     },
     {
       name: 'Grace Nasieku',
       role: 'School Teacher',
       quote: 'The sanitation improvements in our school have reduced student absenteeism and created a healthier learning environment.',
-      image: 'https://images.pexels.com/photos/1181712/pexels-photo-1181712.jpeg?auto=compress&cs=tinysrgb&w=150'
+      image: '/GraceNaieku.jpg'
     }
   ];
 
