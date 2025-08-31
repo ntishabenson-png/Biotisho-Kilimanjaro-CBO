@@ -82,7 +82,7 @@ const About = () => {
 
   const timeline = [
     {
-      year: "2018",
+      year: "2017",
       title: "Foundation",
       description: "Biotisho Kilimanjaro CBO was founded by trained community health promoters from Isinet health unit.",
       image: "/foundation.jpg"
@@ -108,7 +108,7 @@ const About = () => {
     {
       year: "2025",
       title: "Today",
-      description: "Serving over 5,000 community members with comprehensive WASH and NCDs programs.",
+      description: "Serving over 20,000 community members with comprehensive WASH and NCDs programs.",
       image: "/today.jpg"
     }
   ];
