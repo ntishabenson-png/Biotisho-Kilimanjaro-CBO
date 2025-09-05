@@ -5,7 +5,6 @@ import {
   Calendar,
   User,
   Tag,
-  Eye,
   Filter,
   FileText,
   Video,

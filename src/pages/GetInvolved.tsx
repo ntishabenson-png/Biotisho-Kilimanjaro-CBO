@@ -85,10 +85,8 @@ const GetInvolved = () => {
 
   const handlePartnerSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Partner form submitted:", partnerForm);
 
     try {
-      // Use the API_URL variable for the fetch call
       const response = await fetch(`${API_URL}/api/partner-inquiry`, {
         method: "POST",
         headers: {
@@ -100,9 +98,6 @@ const GetInvolved = () => {
       if (!response.ok) {
         throw new Error("Failed to send partnership inquiry.");
       }
-
-      const result = await response.json();
-      console.log("Success:", result);
       alert("Thank you for your interest! We will be in touch soon.");
 
       // Clear the form on successful submission

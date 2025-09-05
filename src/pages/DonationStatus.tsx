@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import { supabase } from "../lib/supabase"; // Assuming this is correctly configured
+import { supabase } from "../lib/supabase"; 
 
 // Backend URL from environment variable
 const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
@@ -18,25 +18,20 @@ const DonationStatus: React.FC = () => {
       }
 
       try {
-        // Call your backend's verification endpoint
+        // Call backend's verification endpoint
         const response = await fetch(`${BACKEND_URL}/api/verify-payment`, {
-          method: "POST", // Use POST as per server.js
+          method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ tx_ref: txRef }), // Send tx_ref in body
+          body: JSON.stringify({ tx_ref: txRef }),
         });
 
         const data = await response.json();
-        console.log("Verification result from backend:", data);
-
-        // Check response.ok and backend's 'verified' flag
         if (response.ok && data.verified) {
           setStatus("success");
-          // Supabase update is now handled by the backend
         } else {
           setStatus("failed");
-          // Supabase update is now handled by the backend
         }
       } catch (err) {
         console.error("Verification error calling backend:", err);

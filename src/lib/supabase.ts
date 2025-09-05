@@ -41,14 +41,12 @@ export const donationService = {
         .single();
 
       if (error) {
-        console.error('❌ Supabase insert error:', JSON.stringify(error, null, 2));
+        console.error('Supabase insert error:', JSON.stringify(error, null, 2));
         throw new Error('Failed to create donation record: ' + error.message);
       }
-
-      console.log('✅ Donation inserted:', data);
       return data;
     } catch (err) {
-      console.error('❌ Error in createDonation:', err);
+      console.error('Error in createDonation:', err);
       throw err;
     }
   },
@@ -95,7 +93,7 @@ export const donationService = {
     return data;
   },
 
-  // Get all donations (for admin purposes)
+  // Get all donations
   async getAllDonations(limit = 50, offset = 0) {
     const { data, error } = await supabase
       .from('donations')

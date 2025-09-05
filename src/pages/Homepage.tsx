@@ -235,7 +235,7 @@ const Homepage = () => {
                 className="rounded-2xl shadow-2xl"
               />
               <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg">
-                <div className="text-2xl font-bold text-teal-600">2018</div>
+                <div className="text-2xl font-bold text-teal-600">2017</div>
                 <div className="text-gray-600">Founded</div>
               </div>
             </div>

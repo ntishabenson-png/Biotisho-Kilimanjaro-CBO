@@ -7,7 +7,7 @@ const PRESET_AMOUNTS = {
   USD: [5, 100, 200, 250, 3100, 1000],
 };
 
-// Currency symbols
+
 const CURRENCY_SYMBOLS: Record<string, string> = {
   KES: "KSh",
   USD: "$",
@@ -57,21 +57,6 @@ const DonationForm: React.FC = () => {
     setIsLoading(true);
 
     try {
-      console.log("🚀 Starting donation process...");
-      console.log("Backend URL:", BACKEND_URL);
-      console.log("Donation payload:", {
-        tx_ref: txRef,
-        amount,
-        currency,
-        donor: {
-          name: donorName,
-          email: donorEmail,
-          phone: donorPhone,
-          anonymous: isAnonymous,
-        },
-        message: message.trim(),
-      });
-
       const res = await fetch(`${BACKEND_URL}/api/donate`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -89,16 +74,13 @@ const DonationForm: React.FC = () => {
         }),
       });
 
-      console.log("📡 Response status:", res.status);
-      console.log("📡 Response ok:", res.ok);
-
+      
       const data = await res.json().catch(() => null);
-      console.log("📦 Response data:", data);
 
       if (!res.ok) {
-        console.error("❌ Donation error:", data);
+        console.error("Donation error:", data);
         
-        // Provide specific error messages for common issues
+        // specific error messages for common issues
         if (data?.error === 'read ECONNRESET') {
           alert("Connection lost to payment service. Please check your internet connection and try again.");
         } else if (data?.error?.includes('ECONNRESET')) {
@@ -114,21 +96,16 @@ const DonationForm: React.FC = () => {
       }
 
       if (data?.link) {
-        console.log("🔗 Flutterwave payment link received:", data.link);
-        console.log("🔗 Link type:", typeof data.link);
-        console.log("🔗 Link length:", data.link.length);
-        
         // Add a small delay to ensure console logs are visible
         setTimeout(() => {
-          console.log("🚀 Redirecting to Flutterwave checkout...");
           window.location.href = data.link;
-        }, 1000);
+        }, 500);
       } else {
-        console.error("❌ No payment link received:", data);
+        console.error("No payment link received:", data);
         alert("Payment link not received. Please try again.");
       }
     } catch (err) {
-      console.error("💥 Donation error:", err);
+      console.error("Donation error:", err);
       alert("Something went wrong. Please check your network and try again.");
     } finally {
       setIsLoading(false);
