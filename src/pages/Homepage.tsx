@@ -72,7 +72,7 @@ const Homepage = () => {
 
   const testimonials = [
     {
-      name: 'Saruni Ole Meoli',
+      name: 'Matayo Melita',
       role: 'Nyumba Kumi',
       quote: 'Biotisho CBO has united our community, making it safer, healthier, and more empowered to work together for a better future.',
       image: '/SaruniMeoli.jpg'
