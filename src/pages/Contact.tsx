@@ -235,25 +235,6 @@ const Contact = () => {
                   </div>
                 ))}
               </div>
-
-              {/* Office Hours
-              <div className="bg-white rounded-xl p-6 shadow-md">
-                <div className="flex items-center mb-4">
-                  <div className="bg-orange-100 p-3 rounded-lg mr-4">
-                    <Clock className="w-6 h-6 text-orange-600" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-gray-900">Office Hours</h3>
-                </div>
-                <div className="space-y-2">
-                  {officeHours.map((schedule, index) => (
-                    <div key={index} className="flex justify-between items-center py-2 border-b border-gray-100 last:border-0">
-                      <span className="text-gray-600">{schedule.day}</span>
-                      <span className="text-gray-900 font-medium">{schedule.hours}</span>
-                    </div>
-                  ))}
-                </div>
-              </div> */}
-
               {/* Social Media */}
               <div className="bg-white rounded-xl p-6 shadow-md">
                 <div className="flex items-center mb-4">

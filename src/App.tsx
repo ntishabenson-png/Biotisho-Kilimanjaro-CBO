@@ -10,7 +10,7 @@ import Resources from './pages/Resources';
 import Contact from './pages/Contact';
 import DonatePage from './pages/DonatePage';
 import DonationStatus from './pages/DonationStatus';
-import ScrollToTop from './components/ScrollToTop'; // Import the new component
+import ScrollToTop from './components/ScrollToTop'; 
 
 function App() {
   return (
