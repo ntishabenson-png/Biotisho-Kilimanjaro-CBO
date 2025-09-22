@@ -78,7 +78,7 @@ const Homepage = () => {
       image: '/SaruniMeoli.jpg'
     },
     {
-      name: 'Richard Sarbabi',
+      name: 'Bornface Ntiati',
       role: 'Local Leader',
       quote: 'The NCDs screening program helped detect my diabetes early. I am grateful for the referral and continued support.',
       image: '/RichardSarbabi.jpg'
