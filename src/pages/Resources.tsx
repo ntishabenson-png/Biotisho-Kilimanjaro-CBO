@@ -215,7 +215,7 @@ const Resources = () => {
       date: "2025-01-05",
       readTime: "5 min read",
       image:
-        "/community.jpg",
+        "/IM 14.jpg  U",
       category: "Community Engagement",
     },
     {
