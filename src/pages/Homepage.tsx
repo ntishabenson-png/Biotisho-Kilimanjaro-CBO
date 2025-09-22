@@ -87,7 +87,7 @@ const Homepage = () => {
       name: 'Grace Nasieku',
       role: 'School Teacher',
       quote: 'The sanitation improvements in our school have reduced student absenteeism and created a healthier learning environment.',
-      image: '/GraceNaieku.jpg'
+      image: '/Mwalimu.jpg'
     }
   ];
 
