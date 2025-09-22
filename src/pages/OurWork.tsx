@@ -35,7 +35,7 @@ const OurWork = () => {
     {
       title: "Community Hygiene Education",
       summary: "Door-to-door hygiene education and behavior change campaigns",
-      image: "/community.jpg",
+      video: "/video.mp4",
       impact: {
         beneficiaries: "300+ households",
         educationSessions: "150 sessions",
@@ -97,7 +97,7 @@ const OurWork = () => {
       image: "/mamatip.jpg"
     },
     {
-      name: "John Matiko",
+      name: "Timothy Melau",
       story: "The diabetes screening camp detected my condition early. With proper medication and support group participation, I'm managing my health well and living normally.",
       impact: "Early detection saved his life",
       image: "/me.jpg"
