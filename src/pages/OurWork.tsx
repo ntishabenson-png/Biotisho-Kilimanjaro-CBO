@@ -35,7 +35,7 @@ const OurWork = () => {
     {
       title: "Community Hygiene Education",
       summary: "Door-to-door hygiene education and behavior change campaigns",
-      video: "/video.mp4",
+      image: "/IM 14.JPG",
       impact: {
         beneficiaries: "300+ households",
         educationSessions: "150 sessions",
