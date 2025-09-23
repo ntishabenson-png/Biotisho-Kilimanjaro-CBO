@@ -106,7 +106,7 @@ const OurWork = () => {
       name: "Rose Nasieku",
       story: "As a teacher, I've seen dramatic improvements in student attendance and performance since the new sanitation facilities were built in our school.",
       impact: "Better learning environment",
-      image: "https://images.pexels.com/photos/1181712/pexels-photo-1181712.jpeg?auto=compress&cs=tinysrgb&w=200"
+      image: "IM 8.jpg"
     }
   ];
 
